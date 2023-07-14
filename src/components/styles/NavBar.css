@@ -1,0 +1,44 @@
+@media only screen and (min-width: 1024px) {
+  .navbar-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    width: 50%;
+    color: white;
+    font-family: Overpass;
+    position: relative;
+    font-size: 0.65rem;
+    justify-items: center;
+    padding-right: 30%;
+    justify-self: left;
+  }
+
+  .navbar-title:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .navbar-link {
+    position: absolute;
+    background-color: white;
+    color: black;
+    display: grid;
+    grid-template-rows: auto;
+    padding: 5% 20% 5% 5%;
+    font-size: 16px;
+    border-radius: 10px;
+    width: fit-content;
+  }
+
+  .navbar-link a {
+    margin: 5% 20% 5% 5%;
+    color: hsl(240, 10%, 16%);
+    width: 100%;
+    font-weight: normal;
+  }
+
+  .navbar-link a:hover {
+    font-weight: 700;
+    cursor: pointer;
+  }
+}

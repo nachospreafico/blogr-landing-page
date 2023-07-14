@@ -8,9 +8,6 @@ function App() {
   return (
     <>
       <Header />
-      <Description />
-      <Features />
-      <Footer />
     </>
   );
 }

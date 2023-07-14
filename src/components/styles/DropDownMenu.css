@@ -14,8 +14,13 @@
     grid-template-rows: auto;
   }
 
+  .dropdown-menu {
+    margin-bottom: 5%;
+  }
+
   .dropdown-title {
     font-family: Overpass;
+    color: hsl(208, 49%, 24%);
   }
 
   .dropdown-header {
@@ -63,6 +68,7 @@
 
   .login-btn {
     background-color: transparent;
+    color: hsl(208, 49%, 24%);
   }
 
   .signup-btn {

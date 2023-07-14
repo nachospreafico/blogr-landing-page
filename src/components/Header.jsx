@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faX } from "@fortawesome/free-solid-svg-icons";
 import "./styles/Header.css";
+import NavBar from "./NavBar";
 
 const Header = () => {
   const [isClicked, setIsClicked] = useState(false);
@@ -25,21 +26,30 @@ const Header = () => {
 
   return (
     <header>
-      <div className="logo-burger-container">
-        <a href="#">
-          <img className="header-logo" src={Logo} alt="Blogr Logo"></img>
-        </a>
-        {
-          <FontAwesomeIcon
-            icon={isClicked ? faX : faBars}
-            className="burger-icon"
-            size="xl"
-            color="white"
-            onClick={() => setIsClicked(!isClicked)}
-          />
-        }
+      <div className="upper-header">
+        <div className="logo-burger-container">
+          <a href="#">
+            <img className="header-logo" src={Logo} alt="Blogr Logo"></img>
+          </a>
+          {isViewportSmall && (
+            <FontAwesomeIcon
+              icon={isClicked ? faX : faBars}
+              className="burger-icon"
+              size="xl"
+              color="white"
+              onClick={() => setIsClicked(!isClicked)}
+            />
+          )}
+        </div>
+        {isClicked && <DropDownMenu />}
+        {!isViewportSmall && <NavBar />}
+        {!isViewportSmall && (
+          <div className="dropdown-buttons">
+            <button className="login-btn">Login</button>
+            <button className="signup-btn">Sign Up</button>
+          </div>
+        )}
       </div>
-      {isClicked && <DropDownMenu />}
       <div className="header-content">
         <h2 className="header-title">A modern publishing platform</h2>
         <h4 className="header-subtitle">
