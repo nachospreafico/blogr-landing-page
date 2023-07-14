@@ -1,0 +1,27 @@
+@media only screen and (max-width: 480px) {
+  .description-container {
+    display: grid;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    padding: 5%;
+    margin-bottom: 50%;
+  }
+
+  .img-editor {
+    width: 100%;
+  }
+
+  .description-subtitle {
+    text-align: center;
+    font-family: Overpass;
+    color: hsl(208, 49%, 24%);
+    width: 80%;
+  }
+
+  .description-text {
+    text-align: center;
+    font-family: Overpass;
+    color: #687683;
+  }
+}

@@ -1,0 +1,77 @@
+@media only screen and (max-width: 480px) {
+  .dropdown-menu-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85vw;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5%;
+  }
+
+  .dropdown-menu-container {
+    display: grid;
+    grid-template-rows: auto;
+  }
+
+  .dropdown-title {
+    font-family: Overpass;
+  }
+
+  .dropdown-header {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .dropdown-link {
+    display: grid;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    background-color: #efeff1;
+    width: 80%;
+    margin: 0 auto 0 auto;
+    border-radius: 10px;
+  }
+
+  .dropdown-link a {
+    margin: 7%;
+    color: #687683;
+    font-family: Overpass;
+  }
+
+  .dropdown-buttons {
+    border-top: 1px solid #efeff1;
+    padding: 5%;
+    display: grid;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .dropdown-buttons button {
+    width: 50%;
+    font-family: Overpass;
+    font-weight: 700;
+    border-radius: 25px;
+    padding: 5%;
+    border: 0;
+    font-size: 1.25rem;
+  }
+
+  .login-btn {
+    background-color: transparent;
+  }
+
+  .signup-btn {
+    background: rgb(255, 137, 111);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 137, 111, 1) 0%,
+      rgba(211, 84, 92, 1) 100%
+    );
+    color: white;
+  }
+}

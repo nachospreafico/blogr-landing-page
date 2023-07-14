@@ -1,0 +1,38 @@
+@media only screen and (max-width: 480px) {
+  footer {
+    background-color: hsl(240, 10%, 16%);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    border-radius: 0 100px 0 0;
+    color: white;
+    font-family: Overpass;
+  }
+
+  footer ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .footer-logo {
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
+
+  .footer-nav-container {
+    margin-bottom: 15%;
+    margin-top: 0;
+  }
+
+  .list-header {
+    color: white;
+    font-size: 1.25rem;
+  }
+
+  footer ul li {
+    line-height: 1.6;
+    color: hsl(240, 2%, 79%);
+  }
+}

@@ -1,0 +1,70 @@
+@media only screen and (max-width: 480px) {
+  .mobile-screens {
+    position: absolute;
+    width: 100%;
+    bottom: 60%;
+  }
+
+  .laptop-mobile {
+    width: 100%;
+  }
+
+  .services-container {
+    background: rgb(44, 45, 63);
+    background: linear-gradient(
+      180deg,
+      rgba(44, 45, 63, 1) 0%,
+      rgba(63, 65, 100, 1) 100%
+    );
+    border-radius: 0 100px 0 100px;
+    position: relative;
+    height: 80vh;
+  }
+
+  .services-text-container {
+    position: relative;
+    top: 40%;
+    display: grid;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .services-title {
+    color: white;
+    font-family: Overpass;
+    font-size: 2.25rem;
+    text-align: center;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  .services-text {
+    text-align: center;
+    color: white;
+    line-height: 1.6;
+    font-family: Overpass;
+    width: 80%;
+  }
+
+  .features {
+    display: grid;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    padding: 5%;
+  }
+
+  .features-subtitle {
+    font-family: Overpass;
+    text-align: center;
+    color: hsl(208, 49%, 24%);
+  }
+
+  .features-text {
+    font-family: Overpass;
+    text-align: center;
+    color: #687683;
+    line-height: 1.6;
+  }
+}
